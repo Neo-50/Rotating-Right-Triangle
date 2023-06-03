@@ -29,7 +29,7 @@ center_x, center_y = width // 2, height // 2
 angle = 0
 
 # Define the speed of the line movement
-line_speed = .02
+line_speed = 1
 
 # Calculate the initial coordinates of the edge of the circle
 edge_x = center_x
@@ -155,6 +155,8 @@ while running:
 
     # Update the display
     pygame.display.flip()
-
+    
+    # Framerate 10fps
+    pygame.time.Clock().tick(10)
 # Quit the game
 pygame.quit()
