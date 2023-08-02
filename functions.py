@@ -17,7 +17,7 @@ def reset_angle(angle):
     return angle
 
 
-def update_coords(edgex, edgey, centerx, centery, angle):
+def update_coords(centerx, centery, angle):
     # Calculate the updated coordinates of the edge of the circle
     edgex = centerx + 400 * math.cos(math.radians(angle))  # Update the x coordinate
     edgey = centery - 400 * math.sin(math.radians(angle))  # Update the y coordinate

@@ -31,10 +31,6 @@ class Settings:
         # Define the speed of the line movement
         self.line_speed = 1
 
-        # Calculate the initial coordinates of the edge of the circle
-        self.edge_x = self.center_x
-        self.edge_y = self.center_y - 400
-
         # Initialize the direction of the line movement
         self.line_direction = 0
 

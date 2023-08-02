@@ -37,7 +37,7 @@ def run_game():
         cset.angle = gf.reset_angle(cset.angle)
 
         # Calculate coordinates for a point the edge of the circle based on angle
-        edgexval, edgeyval = gf.update_coords(cset.edge_x, cset.edge_y, cset.center_x, cset.center_y, cset.angle)
+        edgexval, edgeyval = gf.update_coords(cset.center_x, cset.center_y, cset.angle)
 
         # Calculate the line lengths
         line2len, line3len = gf.line_lengths(edgexval, edgeyval)
